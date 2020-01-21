@@ -1,0 +1,271 @@
+$bodyBgColor : #CDD6D5;
+$navBgColor : #415B76;
+$nav-itemColor : #CDD6D5;
+$triColor : #233656;
+$catBgColor : #7B9BA6;
+$cat-itemColor : #EEF4F2;
+$pres_infoBgColor : #415B76;
+
+body {
+    background: $bodyBgColor;
+}
+
+p {
+    margin: 0;
+}
+//--------
+nav {
+    background: $navBgColor;
+    display: flex;
+}
+
+.nav-item {
+    text-decoration: none;
+    text-align: center;
+    color: $nav-itemColor;
+    margin: auto;
+}
+
+.nav-item:hover {
+    background: $nav-itemColor;
+    color: $navBgColor;
+}
+
+.login-item {
+    text-decoration: none;
+    text-align: center;
+    color: $navBgColor;
+    background: $nav-itemColor;
+    margin: auto;
+}
+
+a#unSelect {
+    text-decoration: none;
+    color: $navBgColor;
+    background: $nav-itemColor;
+    padding: 1.5%;
+}
+
+a#unSelect:hover {
+    background: $navBgColor;
+    color: $nav-itemColor;
+}
+
+.centerIt {
+    font-size: 2em;
+}
+
+
+.bnt-edit {
+    text-decoration: none;
+    color: $navBgColor;
+    background: $nav-itemColor;
+    padding: 1.5%;
+}
+
+.bnt-edit:hover {
+    background: $navBgColor;
+    color: $nav-itemColor;
+}
+
+.bnt-edit-Con {
+    text-align: center;
+}
+.unselectCon {
+    text-align: right;
+}
+
+.tri {
+    text-decoration: none;
+    text-align: center;
+    color: $triColor;
+}
+
+.coff_infoS {
+    border: 1px solid $triColor;
+    text-align: center;
+}
+
+//------
+div.cat {
+    background: $catBgColor;
+    display: flex;
+}
+
+
+.cat-item {
+    text-decoration: none;
+    text-align: center;
+    color: $cat-itemColor;
+    margin: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.cat-item:hover {
+    background: $cat-itemColor;
+    color: $catBgColor;
+}
+
+.cof_i {
+    text-decoration: none;
+    text-align: center;
+    color: $cat-itemColor;
+    margin: auto;
+}
+
+div.cat .active {
+    background: $cat-itemColor;
+    color: $catBgColor;
+}
+
+//-----
+
+
+.prestation {
+    border: 1px solid $catBgColor;
+    margin: 0.3%;
+}
+
+.ThecoffretS {
+    border: 1px solid $catBgColor;
+    margin: 0.3%;
+    width: 100%;
+}
+
+#mesCoff {
+    font-size: 2em;
+    text-align: center;
+}
+
+.pres_info {
+    background: $pres_infoBgColor;
+    padding: 2%;
+    margin-bottom: 0.3%;
+    text-align: center;
+    height: 50px;
+}
+
+.coff_info {
+    background: $pres_infoBgColor;
+    padding: 2%;
+    margin-bottom: 0.3%;
+    text-align: center;
+    height: 90px;
+}
+
+
+.pres_info .col {
+    margin: auto;
+}
+
+.imgContainer {
+    width: 100%;
+}
+
+.presBtn {
+    background: $bodyBgColor;
+    text-decoration: none;
+    color: $pres_infoBgColor;
+}
+
+
+
+.imgPres {
+    width: 99.6%;
+}
+
+.imgPresDetail {
+    max-height: 40vw;
+}
+
+.pres_Detail {
+ text-align: center;
+}
+
+.myCat {
+    text-decoration: none;
+    color: $navBgColor;
+}
+
+.presDetail_item {
+    color: $triColor;
+    font-size: 2em;
+}
+
+input.input, select.input {
+    margin-top: 20px;
+}
+
+
+.signupBtn {
+    background: $triColor;
+    border: 1px solid $catBgColor;
+    color: $catBgColor;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.signupBtn:hover {
+    background: $cat-itemColor;
+    color: $catBgColor;
+}
+
+.form {
+    text-align: center;
+}
+
+.title {
+    color: $triColor;
+    font-size: 2em;
+    text-align: center;
+}
+
+div#cofNav {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+}
+
+h2 {
+    margin : 0;
+}
+
+.profil{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.backg{
+    display: inline-block;
+    padding: 8px;
+    background-color: black;
+    width: 95%;
+}
+
+.imgProfil {
+    max-width: 100%;
+}
+
+
+
+@media screen and (min-width: 768px){
+.cat {
+    height: 60vh;
+}
+
+.cat-item {
+    padding-top: 11%;
+    padding-bottom: 11%;
+}
+
+div#cofNav {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+}
+
+
+}

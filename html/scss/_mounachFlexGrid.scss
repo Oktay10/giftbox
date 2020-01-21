@@ -1,0 +1,65 @@
+@mixin myMixin($nbr_col,$lrg_gut) {
+    $nbr_gut: $nbr_col - 1;
+    $l1c: (100% - $nbr_gut * $lrg_gut) / $nbr_col;
+
+    .container {
+        width: 95%;
+        margin-left: 2%;
+        margin-right: 2%;
+        box-sizing: border-box;
+    }
+    
+    
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .col {
+        padding: 1%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    @media screen and (min-width: 450px){
+    
+        @for $i from 1 through 12{
+            .s#{$i} {
+                width: ($i * $l1c) + ($i - 1) * $lrg_gut;
+            }
+            .offset-s#{$i} {
+                margin-left: ($i * $l1c) + $i * $lrg_gut;
+            }
+        }
+    
+    }
+    
+    @media screen and (min-width: 768px){
+    
+        @for $i from 1 through 12{
+            .m#{$i} {
+                width: ($i * $l1c) + ($i - 1) * $lrg_gut;
+            }
+            .offset-m#{$i} {
+                margin-left: ($i * $l1c) + $i * $lrg_gut;
+            }
+        }
+    
+    }
+
+
+    @media screen and (min-width: 1025px){
+    
+        @for $i from 1 through 12{
+            .l#{$i} {
+                width: ($i * $l1c) + ($i - 1) * $lrg_gut;
+            }
+            .offset-l#{$i} {
+                margin-left: ($i * $l1c) + $i * $lrg_gut;
+            }
+        }
+    
+    }
+
+}
